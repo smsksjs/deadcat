@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>카카오톡 버튼있는 메시지 전송하기</title>
+<script id="javascript-sdk" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+</head>
+<body>
+<p><strong>아래 카카오톡 아이콘을 눌러 전송하세요</strong> By. Blackcats4567</p>
+<a id="kakao-link-btn" href="javascript:sendLink()">
+  <img
+    src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+  />
+</a>
+<script type="text/javascript">
+ Kakao.init('85511aca5354cc8a3aa76f1a8c61f810');
+  function sendLink() {
+    Kakao.Link.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: '이게된다고?',
+        description: '구라치지마',
+        imageUrl:
+          'https://cdn.discordapp.com/attachments/1185570198879748137/1217333848602578994/IMG_8540.png?ex=6603a57e&is=65f1307e&hm=ad884f64c7f26dd92cddb2d0e6fc96b352b6355434dd29cfe383ff579ae37fc8&',
+        link: {
+          mobileWebUrl: 'https://youtube.com',
+          webUrl: 'https://youtube.com',
+        },
+      },
+      social: {
+        likeCount: 6974, //99999가 최대입니다
+        commentCount: 6974, //99999가 최대입니다
+        sharedCount: 6974, //99999가 최대입니다
+      },
+      buttons: [
+        {
+          title: '하이든',
+          link: {
+            mobileWebUrl: 'https://youtube.com',
+            webUrl: 'https://youtube.com',
+          },
+        },
+        {
+          title: '바이든',
+          link: {
+            mobileWebUrl: 'https://youtube.com',
+            webUrl: 'https://youtube.com',
+          },
+        },
+      ],
+    })
+  }
+</script>
+<!-- www.blackcats4567.com -->
+<!-- 이미지/버튼 클릭 시 주소는 Kakao Developers의 애플리케이션 > 플랫폼 > Web에 넣어야 클릭했을때 성공적으로 표시됩니다 -->
+</body>
+</html>

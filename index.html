@@ -1,66 +1,69 @@
 <html>
 <head>
-  <title>카카오톡 버튼있는 메시지 전송하기</title>
-  <script id="javascript-sdk" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
-  <style>
-    #kakao-link-btn {
-      display: block;
-      margin-bottom: 10px;
-    }
-    
-    .kakao-link-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  </style>
+<title>카카오톡 버튼있는 메시지 전송하기</title>
+<script id="javascript-sdk" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+<style>
+  .button-container {
+    display: block;
+    margin-bottom: 10px; 
+  }
+</style>
 </head>
 <body>
-  <div class="kakao-link-container">
-    <p><strong>아래 카카오톡 아이콘을 눌러 전송하세요</strong> By. Blackcats4567</p>
-    <a id="kakao-link-btn" href="javascript:sendLink()">
-      <img src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"/>
-    </a>
-    <script type="text/javascript">
-      Kakao.init('85511aca5354cc8a3aa76f1a8c61f810');
-      function sendLink() {
-        Kakao.Link.sendDefault({
-          objectType: 'feed',
-          content: {
-            title: '현재채팅방수는158명입니다',
-            description: '니슨로니엄마',
-            imageUrl: 'https://cdn.discordapp.com/attachments/861163186799771659/1211480982025146439/image.png?ex=660a0a16&is=65f79516&hm=b801e8fddf93ddd6f04c28cc908b70815f50c1e01f2e157e6fd4aea05e998038&',
-            link: {
-              mobileWebUrl: 'https://youtube.com',
-              webUrl: 'https://youtube.com',
-            },
+<p><strong>아래 카카오톡 아이콘을 눌러 전송하세요</strong> By. Blackcats4567</p>
+<div class="button-container">
+  <a id="kakao-link-btn" href="javascript:sendLink()">
+    <img
+      src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+    />
+  </a>
+</div>
+<div class="button-container">
+  <button onclick="sendLink()">버튼1 글자</button>
+</div>
+<div class="button-container">
+  <button onclick="sendLink()">버튼2 글자</button>
+</div>
+<script type="text/javascript">
+ Kakao.init('85511aca5354cc8a3aa76f1a8c61f810');
+  function sendLink() {
+    Kakao.Link.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: '마자드엄마',
+        description: '죽이러가실분',
+        imageUrl:
+          'https://cdn.discordapp.com/attachments/1217980653795147826/1218567279126511687/Screenshot_20240316_233059_NAVER.jpg?ex=66082237&is=65f5ad37&hm=c1473fbf3934eac730f709bb57ac180fe4f515f904367296c3904a95ae773db8&',
+        link: {
+          mobileWebUrl: 'https://youtube.com',
+          webUrl: 'https://youtube.com',
+        },
+      },
+      social: {
+        likeCount: 6974, //99999가 최대입니다
+        commentCount: 6974, //99999가 최대입니다
+        sharedCount: 6974, //99999가 최대입니다
+      },
+      buttons: [
+        {
+          title: '마자드',
+          link: {
+            mobileWebUrl: 'https://youtube.com',
+            webUrl: 'https://youtube.com',
           },
-          social: {
-            likeCount: 6974, //99999가 최대입니다
-            commentCount: 6974, //99999가 최대입니다
-            sharedCount: 6974, //99999가 최대입니다
+        },
+        {
+          title: '엄마',
+          link: {
+            mobileWebUrl: 'https://youtube.com',
+            webUrl: 'https://youtube.com',
           },
-          buttons: [
-            {
-              title: '니슨로니',
-              link: {
-                mobileWebUrl: 'https://youtube.com',
-                webUrl: 'https://youtube.com',
-              },
-            },
-            {
-              title: '엄마',
-              link: {
-                mobileWebUrl: 'https://youtube.com',
-                webUrl: 'https://youtube.com',
-              },
-            },
-          ],
-        });
-      }
-    </script>
-  </div>
-  <!-- www.blackcats4567.com -->
-  <!-- 이미지/버튼 클릭 시 주소는 Kakao Developers의 애플리케이션 > 플랫폼 > Web에 넣어야 클릭했을때 성공적으로 표시됩니다 -->
+        },
+      ],
+    })
+  }
+</script>
+<!-- www.blackcats4567.com -->
+<!-- 이미지/버튼 클릭 시 주소는 Kakao Developers의 애플리케이션 > 플랫폼 > Web에 넣어야 클릭했을때 성공적으로 표시됩니다 -->
 </body>
 </html>

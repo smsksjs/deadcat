@@ -5,14 +5,19 @@
 </head>
 <body>
 <p><strong>아래 카카오톡 아이콘을 눌러 전송하세요</strong> By. Blackcats4567</p>
+<a id="kakao-link-btn" href="javascript:sendLink()">
+  <img
+    src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+  />
+</a>
 <script type="text/javascript">
  Kakao.init('85511aca5354cc8a3aa76f1a8c61f810');
   function sendLink() {
     Kakao.Link.sendDefault({
       objectType: 'feed',
       content: {
-        title: '마엡',
-        description: '은촠',
+        title: '마에',
+        description: '은초',
         imageUrl:
           'https://i.namu.wiki/i/0dKAmszj4tlqb4Pw3Oe-5L-FCZEm5LodiQv_ScIeXmLjWYMsAmxcquQKFBrNQVI5Hiaz_1mXyWk1tOqQ_V1Qqw.webp',
         link: {

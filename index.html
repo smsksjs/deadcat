@@ -13,34 +13,63 @@
 <script type="text/javascript">
  Kakao.init('45c461194f4a7d9b602d8f3dd37c70bb');
   function sendLink() {
-    Kakao.Link.sendDefault({
-      objectType: 'feed',
-      content: {
-        title: '눈희 컴퍼니【𝐏𝐒】',
-        description: '#눈희 #pop? #멜리',
-        imageUrl:
-          'https://cdn.discordapp.com/attachments/861163186799771659/1246421678339395605/KakaoTalk_20240601_201410026.jpg?ex=665c5425&is=665b02a5&hm=5ff3cbcf900fe21a21f7b0877d5ba05d2ee90d3c4099b1d1edff7ad5c00787b9&',
-        link: {
-          mobileWebUrl: 'https://goodkid123.neocities.org',
-          webUrl: 'https://goodkid123.neocities.org',
-        },
+Kakao.Share.createDefaultButton({
+  container: '#kakaotalk-sharing-btn',
+  objectType: 'list',
+  headerTitle: 'WEEKLY MAGAZINE',
+  headerLink: {
+    mobileWebUrl: 'https://developers.kakao.com',
+    webUrl: 'https://developers.kakao.com',
+  },
+  contents: [
+    {
+      title: '취미의 특징, 탁구',
+      description: '스포츠',
+      imageUrl:
+        'http://k.kakaocdn.net/dn/bDPMIb/btqgeoTRQvd/49BuF1gNo6UXkdbKecx600/kakaolink40_original.png',
+      link: {
+        mobileWebUrl: 'https://developers.kakao.com',
+        webUrl: 'https://developers.kakao.com',
       },
-      social: {
-        likeCount: 99999, //99999가 최대입니다
-        commentCount: 99999, //99999가 최대입니다
-        sharedCount: 99999, //99999가 최대입니다
+    },
+    {
+      title: '크림으로 이해하는 커피이야기',
+      description: '음식',
+      imageUrl:
+        'http://k.kakaocdn.net/dn/QPeNt/btqgeSfSsCR/0QJIRuWTtkg4cYc57n8H80/kakaolink40_original.png',
+      link: {
+        mobileWebUrl: 'https://developers.kakao.com',
+        webUrl: 'https://developers.kakao.com',
       },
-      buttons: [
-        {
-          title: '입장하기 | 자세히 보기',
-          link: {
-            mobileWebUrl: 'https://goodkid123.neocities.org',
-            webUrl: 'https://goodkid123.neocities.org',
-          },
-        },
-      ],
-    })
-  }
+    },
+    {
+      title: '감성이 가득한 분위기',
+      description: '사진',
+      imageUrl:
+        'http://k.kakaocdn.net/dn/c7MBX4/btqgeRgWhBy/ZMLnndJFAqyUAnqu4sQHS0/kakaolink40_original.png',
+      link: {
+        mobileWebUrl: 'https://developers.kakao.com',
+        webUrl: 'https://developers.kakao.com',
+      },
+    },
+  ],
+  buttons: [
+    {
+      title: '웹으로 보기',
+      link: {
+        mobileWebUrl: 'https://developers.kakao.com',
+        webUrl: 'https://developers.kakao.com',
+      },
+    },
+    {
+      title: '앱으로 보기',
+      link: {
+        mobileWebUrl: 'https://developers.kakao.com',
+        webUrl: 'https://developers.kakao.com',
+      },
+    },
+  ],
+});
 </script>
 <!-- www.blackcats4567.com -->
 <!-- 이미지/버튼 클릭 시 주소는 Kakao Developers의 애플리케이션 > 플랫폼 > Web에 넣어야 클릭했을때 성공적으로 표시됩니다 -->

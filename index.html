@@ -13,33 +13,56 @@
 <script type="text/javascript">
  Kakao.init('85511aca5354cc8a3aa76f1a8c61f810');
   function sendLink() {
-Kakao.Share.sendDefault({
-  objectType: 'commerce',
-  content: {
-    title: '언제 어디든, 더 쉽고 편하게 당신의 일상을 더 즐겁게, 헤이 라이언의 이야기를 들려드릴게요.',
-    imageUrl:
-      'http://k.kakaocdn.net/dn/dScJiJ/btqB3cwK1Hi/pv5qHVwetz5RZfPZR3C5K1/kakaolink40_original.png',
-    link: {
-      mobileWebUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
-      webUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
-    },
+Kakao.Share.createDefaultButton({
+  container: '#kakaotalk-sharing-btn',
+  objectType: 'list',
+  headerTitle: 'WEEKLY MAGAZINE',
+  headerLink: {
+    mobileWebUrl: 'https://developers.kakao.com',
+    webUrl: 'https://developers.kakao.com',
   },
-  commerce: {
-    productName: '카카오미니',
-    regularPrice: 100000,
-    discountRate: 10,
-    discountPrice: 90000,
-  },
-  buttons: [
+  contents: [
     {
-      title: '구매하기',
+      title: '멜리오다스',
+      description: '십계 통솔자',
+      imageUrl:
+        'https://mblogthumb-phinf.pstatic.net/MjAxODA1MjZfNjMg/MDAxNTI3MzAzMTg1ODQ4.77OFbF1YGroFlZfprHGwOaRoWhM8M3z6ayEr4TWyZSIg._akp1_2o29Et8yzrW_j56QhHmnP6zsw18fhAjtfUoZAg.PNG.imj03226/Ohys-Raws_Nanatsu_no_Taizai_Imashime_no_Fukkatsu_-_19_%28TBS_1280x720_x264_AAC%29.mp4_000847134.png?type=w800',
       link: {
         mobileWebUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
         webUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
       },
     },
     {
-      title: '공유하기',
+      title: '젤드리스',
+      description: 'ㅈ밥',
+      imageUrl:
+        'https://hedwig-cf.netmarble.com/forum-common/nanakr/7ds/thumbnail/0384fd26b2cc48ea94e056892bbae491_1633258857116_d.jpg',
+      link: {
+        mobileWebUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
+        webUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
+      },
+    },
+    {
+      title: '에스타롯사',
+      description: '최강강민석',
+      imageUrl:
+        'https://data.onnada.com/character/201803/237746802_a2637b2a_A1AFEC82AC29.png',
+      link: {
+        mobileWebUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
+        webUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
+      },
+    },
+  ],
+  buttons: [
+    {
+      title: '똑같은링크',
+      link: {
+        mobileWebUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
+        webUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
+      },
+    },
+    {
+      title: '나는잘생겼다',
       link: {
         mobileWebUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
         webUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',

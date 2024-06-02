@@ -13,59 +13,12 @@
 <script type="text/javascript">
  Kakao.init('85511aca5354cc8a3aa76f1a8c61f810');
   function sendLink() {
-Kakao.Share.createDefaultButton({
+Kakao.Share.createCustomButton({
   container: '#kakaotalk-sharing-btn',
-  objectType: 'list',
-  headerTitle: '이게타이틀인데',
-  headerLink: {
-    mobileWebUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
-    webUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
-  },
-  contents: [
-    {
-      title: '취미의 특징, 탁구',
-      description: '스포츠',
-      imageUrl:
-        'http://k.kakaocdn.net/dn/bDPMIb/btqgeoTRQvd/49BuF1gNo6UXkdbKecx600/kakaolink40_original.png',
-      link: {
-        mobileWebUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
-        webUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
-      },
-    },
-    {
-      title: '크림으로 이해하는 커피이야기',
-      description: '음식',
-      imageUrl:
-        'http://k.kakaocdn.net/dn/QPeNt/btqgeSfSsCR/0QJIRuWTtkg4cYc57n8H80/kakaolink40_original.png',
-      link: {
-        mobileWebUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
-        webUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
-      },
-    },
-    {
-      title: '감성이 가득한 분위기',
-      description: '사진',
-      imageUrl:
-        'http://k.kakaocdn.net/dn/c7MBX4/btqgeRgWhBy/ZMLnndJFAqyUAnqu4sQHS0/kakaolink40_original.png',
-      link: {
-        mobileWebUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
-        webUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
-      },
-    },
-  ],
-  buttons: [
-    {
-      title: '웹으로 보기',
-      link: {
-        mobileWebUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
-        webUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
-      },
-    },
-    {
-      title: '앱으로 보기',
-      link: {
-        mobileWebUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
-        webUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
+  templateId: ${YOUR_TEMPLATE_ID},
+  templateArgs: {
+    title: '제목 영역입니다.',
+    description: '설명 영역입니다.' 
           },
         },
       ],

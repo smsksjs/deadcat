@@ -13,56 +13,33 @@
 <script type="text/javascript">
  Kakao.init('85511aca5354cc8a3aa76f1a8c61f810');
   function sendLink() {
-Kakao.Share.createDefaultButton({
-  container: '#kakaotalk-sharing-btn',
-  objectType: 'list',
-  headerTitle: 'WEEKLY MAGAZINE',
-  headerLink: {
-    mobileWebUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
-    webUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
+Kakao.Share.sendDefault({
+  objectType: 'commerce',
+  content: {
+    title: '언제 어디든, 더 쉽고 편하게 당신의 일상을 더 즐겁게, 헤이 라이언의 이야기를 들려드릴게요.',
+    imageUrl:
+      'http://k.kakaocdn.net/dn/dScJiJ/btqB3cwK1Hi/pv5qHVwetz5RZfPZR3C5K1/kakaolink40_original.png',
+    link: {
+      mobileWebUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
+      webUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
+    },
   },
-  contents: [
-    {
-      title: '취미의 특징, 탁구',
-      description: '스포츠',
-      imageUrl:
-        'http://k.kakaocdn.net/dn/bDPMIb/btqgeoTRQvd/49BuF1gNo6UXkdbKecx600/kakaolink40_original.png',
-      link: {
-        mobileWebUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
-        webUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
-      },
-    },
-    {
-      title: '크림으로 이해하는 커피이야기',
-      description: '음식',
-      imageUrl:
-        'http://k.kakaocdn.net/dn/QPeNt/btqgeSfSsCR/0QJIRuWTtkg4cYc57n8H80/kakaolink40_original.png',
-      link: {
-        mobileWebUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
-        webUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
-      },
-    },
-    {
-      title: '감성이 가득한 분위기',
-      description: '사진',
-      imageUrl:
-        'http://k.kakaocdn.net/dn/c7MBX4/btqgeRgWhBy/ZMLnndJFAqyUAnqu4sQHS0/kakaolink40_original.png',
-      link: {
-        mobileWebUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
-        webUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
-      },
-    },
-  ],
+  commerce: {
+    productName: '카카오미니',
+    regularPrice: 100000,
+    discountRate: 10,
+    discountPrice: 90000,
+  },
   buttons: [
     {
-      title: '웹으로 보기',
+      title: '구매하기',
       link: {
         mobileWebUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
         webUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
       },
     },
     {
-      title: '앱으로 보기',
+      title: '공유하기',
       link: {
         mobileWebUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',
         webUrl: 'https://maelhello1iedkdndddasasasasasa.neocities.org',

@@ -11,7 +11,9 @@
   />
 </a>
 <script type="text/javascript">
-Kakao.Share.sendDefault({
+ Kakao.init('85511aca5354cc8a3aa76f1a8c61f810');
+  function sendLink() {
+    Kakao.Share.sendDefault({
   objectType: 'list',
   headerTitle: 'WEEKLY MAGAZINE',
   headerLink: {
